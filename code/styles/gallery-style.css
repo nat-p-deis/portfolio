@@ -31,7 +31,16 @@ h1{
 /*nav*/
 nav{
 	background-color: #365571;
-	
+	font-size: 16pt;
+	text-align: right;
+	padding-right: 16pt;
+}
+#navi{
+	display: flex;
+	justify-content: flex-end;
+}
+p{
+	padding: 0 16pt 0 0;
 }
 /*style for body*/
 body{
