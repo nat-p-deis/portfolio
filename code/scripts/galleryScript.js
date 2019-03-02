@@ -19,6 +19,7 @@ lightbox.option({
 	'fadeDuration': 300,
 	'alwaysShowNavOnTouchDevices': true,
 	wrapAround: true,
+	albumLabel: " "
 });
 
 /* JQuery for smooth scrolling
