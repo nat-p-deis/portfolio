@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 	<link rel="stylesheet" href="../styles/gallery-style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../scripts/lightbox.min.css">
+	<script type="text/javascript" src="../scripts/lightbox-plus-jquery.min.js"></script>
 </head>
 	
 <body>
@@ -19,58 +21,60 @@
 		</div>
 	</header>
 	<nav>
-		<div id="navi">
-			<a href="#portraits"><p>Portraits</p></a>
-			<a href="#landscapes"><p>Landscapes</p></a>
-			<a href="#other"><p>Other Photos</p></a>
+		<div class="header" id="navi">
+			<a href="#head1"><p>Portraits</p></a>
+			<a href="#head2"><p>Landscapes</p></a>
+			<a href="#head3"><p>Other Photos</p></a>
 		</div>
 	</nav>
-	<main>
-		<h3>Portraits</h3>
+	<main id="gallery">
+		<h3 id="head1">Portraits</h3>
 			<div id="portraits">
-				<img src="../images/1.jpg" alt="The Ledge">
-				<img src="../images/9.jpg" alt="The Legend">
-				<img src="../images/11.jpg" alt="True Love">
-				<img src="../images/13.jpg" alt="Another Day">
-				<img src="../images/18.jpg" alt="Ice Treat">
-				<img src="../images/25.jpg" alt="Feels Like Home">
-				<img src="../images/JohnHuether_CoffeeMania%2008.jpg" alt="The Ground Master">
-				<img src="../images/JohnHuether_OhioTrip02.jpg" alt="The Prince">
-				<img src="../images/JohnHuether_OhioTrip04.jpg" alt="Walkin Dirty">
-				<img src="../images/JohnHuether_OhioTrip14.jpg" alt="Busy">
+				<a href="../images/9.jpg" data-lightbox="portraits" data-title="The Legend"><img class="imag" src="../images/9.jpg"></a>
+				<a href="../images/1.jpg" data-lightbox="portraits" data-title="The Ledge"><img class="imag" src="../images/1.jpg"></a>
+				<a href="../images/11.jpg" data-lightbox="portraits" data-title="True Love"><img class="imag" src="../images/11.jpg"></a>
+				<a href="../images/13.jpg" data-lightbox="portraits" data-title="Another Day"><img class="imag" src="../images/13.jpg"></a>
+				<a href="../images/18.jpg" data-lightbox="portraits" data-title="Ice Treat"><img class="imag" src="../images/18.jpg"></a>
+				<a href="../images/25.jpg" data-lightbox="portraits" data-title="Feels Like Home"><img class="imag" src="../images/25.jpg"></a>
+				<a href="../images/JohnHuether_CoffeeMania%2008.jpg" data-lightbox="portraits" data-title="The Ground Master"><img class="imag" src="../images/JohnHuether_CoffeeMania%2008.jpg"></a>
+				<a href="../images/JohnHuether_OhioTrip02.jpg" data-lightbox="portraits" data-title="The Prince"><img class="imag" src="../images/JohnHuether_OhioTrip02.jpg"></a>
+				<a href="../images/JohnHuether_OhioTrip04.jpg" data-lightbox="portraits" data-title="Walkin' Dirty"><img class="imag" src="../images/JohnHuether_OhioTrip04.jpg"></a>
+				<a href="../images/JohnHuether_OhioTrip14.jpg" data-lightbox="portraits" data-title="Busy"><img class="imag" src="../images/JohnHuether_OhioTrip14.jpg"></a>
 			</div>
-		<h3>Landscapes</h3>
+		<h3 id="head2">Landscapes</h3>
 			<div id="landscapes">
-				<img src="../images/6.jpg" alt="The End">
-				<img src="../images/10.jpg" alt="Upwards">
-				<img src="../images/14.jpg" alt="The Morning">
-				<img src="../images/15.jpg" alt="The Overlook">
-				<img src="../images/16.jpg" alt="Down 'n Dirty">
-				<img src="../images/20.jpg" alt="Harvest">
-				<img src="../images/21.jpg" alt="Free Falling">
-				<img src="../images/23.jpg" alt="Blast from the Past">
-				<img src="../images/24.JPG" alt="Crisp">
-				<img src="../images/JohnHuether_Cornell_Trip33.jpg" alt="Moving Forward">
-				<img src="../images/JohnHuether_Cornell_Trip38.jpg" alt="Fall Day">				
+				<a href="../images/6.jpg" data-lightbox="landscapes" data-title="The End"><img class="imag" src="../images/6.jpg"></a>
+				<a href="../images/10.jpg" data-lightbox="landscapes" data-title="Upwards"><img class="imag" src="../images/10.jpg"></a>
+				<a href="../images/14.jpg" data-lightbox="landscapes" data-title="The Morning"><img class="imag" src="../images/14.jpg"></a>
+				<a href="../images/15.jpg" data-lightbox="landscapes" data-title="The Overlook"><img class="imag" src="../images/15.jpg"></a>
+				<a href="../images/16.jpg" data-lightbox="landscapes" data-title="Down 'n Dirty"><img class="imag" src="../images/16.jpg"></a>
+				<a href="../images/20.jpg" data-lightbox="landscapes" data-title="Harvest"><img class="imag" src="../images/20.jpg"></a>
+				<a href="../images/21.jpg" data-lightbox="landscapes" data-title="Free Falling"><img class="imag" src="../images/21.jpg"></a>
+				<a href="../images/23.jpg" data-lightbox="landscapes" data-title="Blast from the Past"><img class="imag" src="../images/23.jpg"></a>
+				<a href="../images/24.jpg" data-lightbox="landscapes" data-title="Crisp"><img class="imag" src="../images/24.jpg"></a>
+				<a href="../images/JohnHuether_Cornell_Trip33.jpg" data-lightbox="landscapes" data-title="Moving Forward"><img class="imag" src="../images/JohnHuether_Cornell_Trip33.jpg"></a>
+				<a href="../images/JohnHuether_Cornell_Trip38.jpg" data-lightbox="landscapes" data-title="Fall Day"><img class="imag" src="../images/JohnHuether_Cornell_Trip38.jpg"></a>
 			</div>
-		<h3>Other Photos</h3>
+		<h3 id="head3">Other Photos</h3>
 			<div id="other">
-				<img src="../images/2.jpg" alt="Hard at Work">
-				<img src="../images/3.JPG" alt="In Awe">
-				<img src="../images/4.jpg" alt="The Stare">
-				<img src="../images/5.jpg" alt="Work Pays Off">
-				<img src="../images/7.jpg" alt="Passion">
-				<img src="../images/8.jpg" alt="Home">
-				<img src="../images/19.jpg" alt="Mood">
-				<img src="../images/22.jpg" alt="Ice Cold">
-				<img src="../images/JohnHuether_CoffeeMania%2033.jpg" alt="The Bag">
-				<img src="../images/JohnHuether_Cornell_Trip59.jpg" alt="Old Ride">
+				<a href="../images/3.JPG" data-lightbox="other" data-title="In Awe"><img class="imag" src="../images/3.JPG"></a>
+				<a href="../images/4.jpg" data-lightbox="other" data-title="The Stare"><img class="imag" src="../images/4.jpg"></a>
+				<a href="../images/5.jpg" data-lightbox="other" data-title="Work Pays Off"><img class="imag" src="../images/5.jpg"></a>
+				<a href="../images/7.jpg" data-lightbox="other" data-title="The Legend"><img class="imag" src="../images/7.jpg"></a>
+				<a href="../images/8.jpg" data-lightbox="other" data-title="Home"><img class="imag" src="../images/8.jpg"></a>
+				<a href="../images/19.jpg" data-lightbox="other" data-title="Mood"><img class="imag" src="../images/19.jpg"></a>
+				<a href="../images/22.jpg" data-lightbox="other" data-title="Ice Cold"><img class="imag" src="../images/22.jpg"></a>
+				<a href="../images/JohnHuether_CoffeeMania%2033.jpg" data-lightbox="other" data-title="The Bag"><img class="imag" src="../images/JohnHuether_CoffeeMania%2033.jpg"></a>
+				<a href="../images/JohnHuether_Cornell_Trip59.jpg" data-lightbox="other" data-title="Old Ride"><img class="imag" src="../images/JohnHuether_Cornell_Trip59.jpg"></a>
 			</div>
 	</main>
 	<footer>
         <div id="icons">
-            <a href="https://m.facebook.com/johnhuetherphotography/"><i class="fa fa-facebook fa-2x" ></i></a>
-            <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fjohnhuether_photos%2F&h=AT2S21Edn7KbAFlOBCPtMChZ6NnO_Vurq9mcgm-g906glP4HbmOCnfRu7DwPR_xHsRB_f8puCexuRRK4UkS9OAPW8hbfSMB3akQPFMEsx_ZMcdF3CEyza66OrWc_hyUt_uWsxQ"><i class="fa fa-instagram fa-2x"></i></a>
+            <a class="ic" href="https://m.facebook.com/johnhuetherphotography/" target="_blank"><i class="fa fa-facebook fa-2x" ></i></a>
+            <a class="ic" href="https://www.instagram.com/johnhuether_photos/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+			<a class="ic" href="https://johnhuetherphotography.tumblr.com/" target="_blank"><i class="fa fa-tumblr-square"  style="font-size:36px"></i></a>
         </div>
     </footer>
+	<script src="../scripts/galleryScript.js"></script>
 </body>
+</html>
