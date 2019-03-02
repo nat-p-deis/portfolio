@@ -64,3 +64,6 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
+.ic{
+	padding: 0 16px;
+}
