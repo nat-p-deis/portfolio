@@ -1,0 +1,151 @@
+*{
+	margin: auto;
+}
+#warning{
+	visibility: hidden;
+}
+body{
+	background-color: black;
+}
+#pg3{
+	margin: 80px;
+}
+p{
+	font-family: 'Merienda', cursive;
+	font-size: 18pt;
+	color: #bfd8d7;
+}
+#light1{
+	opacity: 0;
+	z-index: 0;
+	position: absolute;
+	width: 25vw;
+	top: 10%;
+	left: 37.7%;
+}
+#spikes{
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	width: 65vw;
+	top: -5%;
+	left: 20%;
+}
+#fg{
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	width: 40vw;
+	top: 2%;
+	left: 14%;
+}
+#light2{
+	z-index: 0;
+	position: absolute;
+	width: 20vw;
+	top: 112%;
+	left: 43%;
+}
+#firefall{
+	z-index: 1;
+	position: absolute;
+	width: 2vw;
+	top: 140%;
+	left: 52%;
+}
+#fallen{
+	z-index: 2;
+	position: absolute;
+	width: 10vw;
+	top: 141%;
+	left: 48.5%;
+}
+#head{
+	opacity: 0;
+	z-index: 0;
+	position: absolute;
+	width: 50vw;
+	top: 207.5%;
+	left: 15%;
+}
+#hand{
+	opacity: 0;
+	z-index: 1;
+	position: absolute;
+	width: 25vw;
+	top: 238%;
+	left: 53%;
+}
+#circle{
+	opacity: 0;
+	z-index: 2;
+	position: absolute;
+	width: 30vw;
+	top: 262%;
+	left: 38%;
+}
+#eye{
+	opacity: 0.3;
+	z-index: 4;
+	position: absolute;
+	width: 16vw;
+	top: 240.5%;
+	left: 45%;
+}
+#red{
+	z-index: 3;
+	min-width: 400px;
+	position: absolute;
+	width: 57vw;
+	top: 121%;
+	left: 24.22%;
+}
+#p3-1{
+	opacity: 0;
+	z-index: 5;
+	position: absolute;
+	top: 62%;
+	left: 9%;	
+}
+#p3-2{
+	z-index: 5;
+	position: absolute;
+	top: 160%;
+	left: 21%;
+}
+#p3-3{
+	color: #9b2323;
+	z-index: 5;
+	position: absolute;
+	top: 290%;
+	left: 37%;
+	padding-bottom: 80px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+	#pg3{
+		visibility: hidden;
+	}
+	#warning{
+		visibility: visible;
+		font-family: 'Nothing You Could Do', cursive;
+		color: #bfd8d7;
+		font-size: 18pt;
+		text-align: center;
+		margin: 40px;
+		position: absolute;
+		top: 20%;
+	}
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: none; 
+}
+::-webkit-scrollbar-thumb {
+  background: #9b2323; 
+}
+/*scroll bar styling sourced from w3 https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
