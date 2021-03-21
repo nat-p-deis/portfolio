@@ -77,6 +77,9 @@ h1{
 	width: 100vw;
 	padding: 0;
 }
+#mainImg{
+	padding: 0;
+}
 #proj{
 	padding-top: 24px;
 	padding-bottom: 0px;
@@ -145,11 +148,12 @@ h1{
 	.img{
 		width: 100%;
 		margin: 0;
-		padding: 4px 0;
+		padding: 0;
 	}
 	#gallery{
 		display: block;
-		width: 100vw;
+		width: auto;
 		margin: 0;
+		padding: 0;
 	}
 }
