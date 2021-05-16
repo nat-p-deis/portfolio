@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumaSort</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/jpg" href="images/icon.jpg">
+</head>
+	
+<body>
+	<header id="header">
+		<h1>LumaSort</h1>
+		<div id="empty"></div>
+		<div id="tabs">
+			<h1 class="nav"><a href="#part3">How it Works</a></h1>
+			<h1 class="nav"><a href="#contact">Contact</a></h1>
+		</div>
+	</header>
+	<div id="bod">
+		<div id="frontpage" class="front">
+			<div id="blank"></div>
+			<h2>10 Million Tons</h2>
+			<h3>of glass is disposed of each year in the US</h3>
+			<h2>Only 33%</h2>
+			<h3>gets properly recycled</h3>
+		</div>
+		<div id="part1">
+			<h4 id="title1">Glass recycling is a global issue contributing to major economic and environmental issues.</h4>
+			<p>Landfills significantly contribute to worldwide pollution. Recycling initiatives have proven to limit the tonnage of garbage being placed in the earth by re-purposing the use of many materials; glass is one of these items. Additionally, by recycling more glass the requirement for sand, a limited resource, is reduced.</p>
+			<p>Current Glass Recycling Impact</p>
+			<img src="images/fig1.png" alt="77% of all glass produced is new glass while 23% is recycled. Within the total recycled glass, the impact is on 5% landfill savings, 7% energy savings, and 11% carbon savings" class = "fig">
+			<h4>The world needs an accurate, accessible, ecofriendly, and cost effective glass recycling solution.</h4>
+		</div>
+		<div id="part2">
+			<div id="intro">
+				<h4 id="lumasort">Introducing LumaSort</h4>
+				<img src="images/vsr.jpg" alt="3D render of the vertical sorting robot" id="img">
+			</div>
+			<p id="parL">The LumaSort Vertical Sorting Robot has been designed specifically to sort glass, but it has potential to do so much more.</p>
+		</div>
+		<div id="part3">
+			<h4 class="diagtext" id="diagtitle">How it Works</h4>
+			<p class="diagtext" id="diag1">Crushed glass of differing colors is loaded into the hopper.</p>
+			<p class="diagtext" id="diag2">The crushed glass is scanned by the integrated sensor network.</p>
+			<p class="diagtext" id="diag3">Separators respond to the sensor data and automatically sort the glass into different groups.</p>
+			<p class="diagtext" id="diag4">The result is perfectly sorted piles of glass ready to be recycled.</p>
+			<img src="images/diagram.png" alt="a diagram of the sorting process" id="diag">
+		</div>
+		<div id="part4">
+			<p>LumaSort will reduce the transportation costs, required sorting infrastructure, manual labor time, and high carbon emitting machinery by streamlining the entire process into one efficient robot.</p>
+			<p>Projected Glass Recycling Impact with LumaSort</p>
+			<img src="images/fig2.png" alt="It is projected that LumaSort will make it so 50% of glass produced will be from recycled glass. This will result in an impact of 10% landfill savings, 15% energy savings, and 25% carbon savings" class = "fig" id="fig2">
+			<h4 class="factoid">The global recycled glass market is</h4>
+			<h4 class="factoid">expected to reach $5.7 billion by 2026</h4>
+			<p>With great technological requirements comes a re-visioned industry ripe for innovation. LumaSort will be a return on both financial and economic investment that pays for itself within five years. It will automate a complex and costly affair into an efficient, clean, and environmentally impactful process at a fraction of the original cost.</p>
+		</div>
+		<div id="contact">
+			<p id="cont">Contact us to see how LumaSort can benefit you</p>
+		</div>
+	</div>
+	<footer>
+		<p class="foot"><a href="patent-doc.pdf" target="_blank">Patent filed with the United States Patent & Trademark Office</a></p>
+		<p class="foot"><a href="patent-doc.pdf" target="_blank">US20190126325A1</a></p>
+	</footer>
+	
+	<script>
+		window.onscroll = function() {stickyHeader()};
+
+		var header = document.getElementById("header");
+		var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
