@@ -3,6 +3,7 @@
 	font-family: 'Lato', sans-serif;
 }
 body{
+	background-color: #283039;
 	overflow-x: hidden;
     overflow-y: scroll;
 	margin-right: 16px;
@@ -85,6 +86,7 @@ h3{
 #part1{
 	padding: 16px;
 	margin: 0 20vw;
+	background-color: white;
 }
 h4, p{
 	color: #07090A;
@@ -124,6 +126,7 @@ p{
 #parL{
 	padding: 16px;
 	margin: 0 20vw;
+	background-color: white;
 }
 /*part 3*/
 #part3{
@@ -170,6 +173,7 @@ p{
 }
 /*part 4*/
 #part4{
+	background-color: white;
 	margin: 0 20vw;
 	padding: 16px;
 }
@@ -183,6 +187,7 @@ p{
 }
 /*contact*/
 #contact{
+	background-color: white;
 	margin: 0 20vw;
 	color: #64B31E;
 	padding: 16px;
